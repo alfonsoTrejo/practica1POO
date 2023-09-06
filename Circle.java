@@ -144,7 +144,15 @@ public class Circle
             draw();
         }
     }
+    /**
+    *   cambiar la posición de la figura   
+    */
 
+    public void changePositions(int xPosition, int yPosition){
+        this.xPosition = xPosition;
+        this.yPosition = yPosition;
+        draw();
+    }
     /**
      * Change the size to the new size (in pixels). Size must be >= 0.
      */
@@ -157,7 +165,7 @@ public class Circle
 
     /**
      * Change the color. Valid colors are "red", "yellow", "blue", "green",
-     * "magenta" and "black".
+     * "magenta", "azul eléctrico" "verde bebe" "cafe chocolate" and "black".
      */
     public void changeColor(String newColor)
     {
@@ -172,8 +180,7 @@ public class Circle
     {
         if(isVisible) {
             Canvas canvas = Canvas.getCanvas();
-            canvas.draw(this, color, new Ellipse2D.Double(xPosition, yPosition, 
-                                                          diameter, diameter));
+            canvas.draw(this, color, new Ellipse2D.Double(xPosition, yPosition, diameter, diameter));
             canvas.wait(10);
         }
     }

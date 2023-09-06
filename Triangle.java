@@ -157,10 +157,19 @@ public class Triangle
         width = newWidth;
         draw();
     }
+    /**
+    *   cambiar la posición de la figura   
+    */
 
+    public void changePositions(int xPosition, int yPosition){
+        this.xPosition = xPosition;
+        this.yPosition = yPosition;
+        draw();
+    }
+    
     /**
      * Change the color. Valid colors are "red", "yellow", "blue", "green",
-     * "magenta" and "black".
+     * "magenta", "azul eléctrico" "verde bebe" "cafe chocolate" and "black".
      */
     public void changeColor(String newColor)
     {

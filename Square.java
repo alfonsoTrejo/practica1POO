@@ -157,14 +157,23 @@ public class Square
 
     /**
      * Change the color. Valid colors are "red", "yellow", "blue", "green",
-     * "magenta" and "black".
+     * "magenta", "azul eléctrico" "verde bebe" "cafe chocolate" and "black".
      */
     public void changeColor(String newColor)
     {
         color = newColor;
         draw();
     }
+    /**
+    *   cambiar la posición de la figura   
+    */
 
+    public void changePositions(int xPosition, int yPosition){
+        this.xPosition = xPosition;
+        this.yPosition = yPosition;
+        draw();
+    }
+    
     /**
      * Draw the square with current specifications on screen.
      */
@@ -181,7 +190,7 @@ public class Square
     /**
      * Erase the square on screen.
      */
-    private void erase()
+    public void erase()
     {
         if(isVisible) {
             Canvas canvas = Canvas.getCanvas();
